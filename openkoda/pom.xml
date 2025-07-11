@@ -29,6 +29,12 @@
                 </dependency>
             </dependencies>
         </profile>
+        <profile>
+            <id>skip-git-commit-id</id>
+            <properties>
+                <git.commit.id.skip>true</git.commit.id.skip>
+            </properties>
+        </profile>
     </profiles>
     
     <build>

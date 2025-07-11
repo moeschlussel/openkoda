@@ -2,7 +2,7 @@
 FROM maven:3.8.7-eclipse-temurin-17 AS build
 WORKDIR /app
 COPY . .
-RUN mvn -f openkoda/pom.xml clean package -DskipTests
+RUN mvn -f openkoda/pom.xml clean package -DskipTests -Pskip-git-commit-id
 
 # ---- Run Stage ----
 FROM eclipse-temurin:17-jdk
