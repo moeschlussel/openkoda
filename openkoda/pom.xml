@@ -52,6 +52,9 @@
             <plugin>
                     <groupId>io.github.git-commit-id</groupId>
                     <artifactId>git-commit-id-maven-plugin</artifactId>
+                    <configuration>
+                        <skip>${git.commit.id.skip}</skip>
+                    </configuration>
                     <executions>
                         <execution>
                             <id>get-the-git-infos</id>
